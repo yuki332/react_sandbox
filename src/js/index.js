@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import style from "./style.scss";
+import Game from "./components/Game/Game";
 
-const Test = () => {
+const App = () => {
     return <div>
-        <h1>Hello me</h1>
-        <h3>and this is my frist react</h3>
-    </div>;
+        <h1 className={style.test}>Welcome! This is React Sandbox</h1>
+        <Game />
+    </div>
 };
 
-ReactDOM.render(<Test />, document.getElementById('index'));
+ReactDOM.render(<App />, document.getElementById('app'));
